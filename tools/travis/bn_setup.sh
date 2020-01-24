@@ -23,7 +23,7 @@ else
         pip install --user numpy
         pip install --user "."
     fi
-       python setup.py build_ext--user  --inplace
+       python setup.py build_ext --user  --inplace
     if [ "${TEST_RUN}" == "doc" ]; then
         make doc
     elif [ "${TEST_RUN}" == "coverage" ]; then
