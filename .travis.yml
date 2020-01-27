@@ -2,7 +2,6 @@ os: linux
 language: generic
 cache:
     directories:
-      - $HOME/.cache/pip
       - .hypothesis
 
 git:
