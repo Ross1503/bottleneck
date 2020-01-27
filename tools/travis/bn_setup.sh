@@ -19,11 +19,6 @@ else
         pip install --user "${ARCHIVE[0]}"
     elif [ "${TEST_RUN}" != "coverage" ]; then
         # CFLAGS gets ignored by PEP 518, so do coverage from inplace build
-        pip install --user cython
-        which cython
-        echo $PATH
-        export PATH=$PATH:/home/travis/.local/bin
-        pip install --user numpy
         pip install --user "."
     fi
        python setup.py build_ext --user  --inplace
