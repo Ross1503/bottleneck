@@ -21,7 +21,7 @@ else
         # CFLAGS gets ignored by PEP 518, so do coverage from inplace build
         pip install --user cython
         which cython
-        echo $Path
+        echo $PATH
         pip install --user numpy
         pip install --user "."
     fi
