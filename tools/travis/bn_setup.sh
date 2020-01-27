@@ -22,6 +22,7 @@ else
         pip install --user cython
         which cython
         echo $PATH
+        export PATH=$PATH:/home/travis/.local/bin
         pip install --user numpy
         pip install --user "."
     fi
