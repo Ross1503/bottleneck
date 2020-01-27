@@ -20,6 +20,8 @@ else
     elif [ "${TEST_RUN}" != "coverage" ]; then
         # CFLAGS gets ignored by PEP 518, so do coverage from inplace build
         pip install --user cython
+        which cython
+        echo $Path
         pip install --user numpy
         pip install --user "."
     fi
